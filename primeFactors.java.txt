@@ -1,0 +1,38 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	  System.out.println("before calling myFun"); // -- c1
+    primeFactors(100);
+	// System.out.println("after calling getFirstDigit, thr rsult is =" +primeFactors(25) );// ---c3
+	  
+	    
+	}
+	public static boolean  isPrime(int num){
+      for(int i = 2; i< num; i++){
+          if(num % i == 0){
+          return false;
+          }
+         
+      }
+      return true;
+      
+	}
+	
+	public static void primeFactors(int num){
+	    for(int i =2; i<= num; i++)
+	    {
+	        if(isPrime(i))
+	        {
+	            int x = i;
+	            while(num % x == 0){
+	                System.out.println(" "+i);
+	                x = x*i;
+	            }
+	            
+	        }
+	    }
+	}
+
+}
+

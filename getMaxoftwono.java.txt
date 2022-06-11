@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	  System.out.println("before calling myFun"); // -- c1
+
+	 System.out.println("after calling getmax, thr rsult is =" +getMax(99,78) );// ---c3
+	  
+	    
+	}
+		public static int  getMax(int  n1 , int n2){
+		    if(n1> n2)
+		    return n1;
+		    else
+		    return n2;
+
+	}
+
+}

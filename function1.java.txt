@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    System.out.println("before calling myFun"); // -- c1
+
+	    int res = sum(6,5);    
+	    int mult_res = multiply(5,5);
+	    System.out.println("after calling myFun, thr rsult is =" + res);// ---c3
+	    System.out.println("after calling multiply fun, thr rsult is =" + mult_res);// ---c3
+	    
+	}
+		public static int multiply(int num1, int num2){
+	     int x =num1 *num2;  
+	     System.out.println("I am in  multiply fun");
+	     return x;
+	}
+
+	
+		public static int sum(int num1, int num2){
+	     int x =num1 + num2;  
+	     System.out.println("I am in  myFun");
+	     return x;
+	}
+
+
+
+}
